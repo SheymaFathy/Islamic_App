@@ -37,7 +37,7 @@ class PrayerTimeRepository {
         final timings = data['data']['timings'] as Map<String, dynamic>;
 
         // excluded list
-        List<String> excludedPrayerTimes = ["Sunset", "Midnight"];
+        List<String> excludedPrayerTimes = ["Sunset", "Midnight", "Firstthird", "Lastthird", "Imsak"];
 
         List<PrayerTime> prayerTimes =
             timings.entries

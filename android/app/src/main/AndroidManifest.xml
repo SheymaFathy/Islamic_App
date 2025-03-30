@@ -4,7 +4,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
        android:enableOnBackInvokedCallback="true"
-        android:label="islamic_app"
+        android:label="طمأنينة"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

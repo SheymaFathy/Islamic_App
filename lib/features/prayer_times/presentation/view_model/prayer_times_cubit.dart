@@ -1,22 +1,9 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:islamic_app/features/prayer_times/presentation/view_model/prayer_times_state.dart';
 import '../../data/model/prayer_times_model.dart';
 import '../../data/repo/prayer_tomes_repo.dart';
 
-abstract class PrayerTimeState {}
 
-class PrayerTimeInitial extends PrayerTimeState {}
-
-class PrayerTimeLoading extends PrayerTimeState {}
-
-class PrayerTimeLoaded extends PrayerTimeState {
-  final List<PrayerTime> prayerTimes;
-  PrayerTimeLoaded(this.prayerTimes);
-}
-
-class PrayerTimeError extends PrayerTimeState {
-  final String message;
-  PrayerTimeError(this.message);
-}
 
 class PrayerTimeCubit extends Cubit<PrayerTimeState> {
   final PrayerTimeRepository prayerTimeRepository;

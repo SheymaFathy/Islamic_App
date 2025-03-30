@@ -24,6 +24,8 @@ dependencies:
   geolocator: ^13.0.3
   hijri: ^3.0.0
   http: ^1.3.0
+
+
  
 
 
@@ -34,6 +36,14 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/playstore-icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+
 
 flutter:
 
@@ -46,6 +56,7 @@ flutter:
      - assets/symbols/
      - assets/json_apis/
      - assets/sounds/
+     - assets/icon/
 # app fonts
   fonts:
      - family: Cairo

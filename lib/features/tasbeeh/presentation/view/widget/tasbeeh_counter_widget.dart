@@ -32,7 +32,7 @@ class TasbeehCounter extends StatelessWidget {
             children: [
               Text(
                 tasbeehList[currentIndex],
-                style: AppStyles.title.copyWith(fontFamily: "fares")
+                style: AppStyles.title.copyWith(fontFamily: "fares", fontSize: 40),
               ),
               const SizedBox(height: 20),
               Text(

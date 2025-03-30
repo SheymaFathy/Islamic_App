@@ -9,6 +9,8 @@ import '../../data/model/prayer_times_model.dart';
 import '../view_model/prayer_times_cubit.dart';
 import 'package:intl/intl.dart';
 
+import '../view_model/prayer_times_state.dart';
+
 class PrayerTimeView extends StatefulWidget {
   const PrayerTimeView({super.key});
 

@@ -1,19 +1,17 @@
-// import '../../data/model/prayer_times_model.dart';
+import '../../data/model/prayer_times_model.dart';
 
-// abstract class PrayerTimeState {}
+abstract class PrayerTimeState {}
 
-// class PrayerTimeInitial extends PrayerTimeState {}
+class PrayerTimeInitial extends PrayerTimeState {}
 
-// class PrayerTimeLoading extends PrayerTimeState {}
+class PrayerTimeLoading extends PrayerTimeState {}
 
-// class PrayerTimeLoaded extends PrayerTimeState {
-//   final List<PrayerTime> prayerTimes;
+class PrayerTimeLoaded extends PrayerTimeState {
+  final List<PrayerTime> prayerTimes;
+  PrayerTimeLoaded(this.prayerTimes);
+}
 
-//   PrayerTimeLoaded(this.prayerTimes);
-// }
-
-// class PrayerTimeError extends PrayerTimeState {
-//   final String message;
-
-//   PrayerTimeError(this.message);
-// }
+class PrayerTimeError extends PrayerTimeState {
+  final String message;
+  PrayerTimeError(this.message);
+}
